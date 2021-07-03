@@ -1,0 +1,672 @@
+﻿<!doctype html>
+<html class="fixed sidebar-light header-dark csstransforms header-dark csstransforms">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Responsive Tables | Porto Admin - Responsive HTML5 Template</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../Assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../Assets/vendor/boxicons/css/boxicons.min.css" />
+
+    <link rel="stylesheet" href="../Assets/vendor/magnific-popup/magnific-popup.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../Assets/css/theme.css" />
+
+</head>
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    ViePay
+                </a>
+                <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <form action="pages-search-results.html" class="search nav-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Tìm kiếm...">
+                        <span class="input-group-append">
+                            <button class="btn btn-default" type="submit"><i class="bx bx-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+
+                <span class="separator"></span>
+
+                <ul class="notifications">
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-bell"></i>
+                            <span class="badge">4</span>
+                        </a>
+
+                        <div class="dropdown-menu notification-menu">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default">4</span>
+                                Thông báo
+                            </div>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-thumbs-down bg-danger text-light"></i>
+                                            </div>
+                                            <span class="title">Trịnh Văn Quyết gửi đến 500.000!</span>
+                                            <span class="message">Vừa xong</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-lock bg-warning text-light"></i>
+                                            </div>
+                                            <span class="title">Trần Tuấn Anh gửi đi 300.000</span>
+                                            <span class="message">15 phút trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Apple Inc. 100.000</span>
+                                            <span class="message">2 giờ trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Ebay LLC 1.000.000</span>
+                                            <span class="message">01/01/2021</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="text-right">
+                                    <a href="DanhSachThongBao.html" class="view-more">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+                            <span class="name">Nguyễn Văn A</span>
+                        </div>
+
+                        <i class="fa custom-caret"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled mb-2">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user-circle"></i> Thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="bx bx-power-off"></i> Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+
+                    </div>
+                    <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            <ul class="nav nav-main">
+                                <li>
+                                    <a class="nav-link" href="BangDieuKhien.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Bảng điều khiển</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachGiaoDich.html">
+                                        <i class="bx bx-cart-alt" aria-hidden="true"></i>
+                                        <span>Giao dịch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachThe.html">
+                                        <i class="bx bx-detail" aria-hidden="true"></i>
+                                        <span>Thẻ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachQuy.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Quỹ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachTinTuc.html">
+                                        <i class="bx bx-file" aria-hidden="true"></i>
+                                        <span>Tin tức</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="ThietLap.html">
+                                        <i class="bx bx-loader-circle" aria-hidden="true"></i>
+                                        <span>Thiết lập</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>Giao dịch</h2>
+
+                    <div class="right-wrapper text-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="BangDieuKhien.html">
+                                    <i class="bx bx-home-alt"></i>
+                                </a>
+                            </li>
+                            <li><span>Giao dịch</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                </header>
+                <!-- start: page -->
+                <div class="row">
+                    <div class="col">
+                        <section class="card">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Danh sách giao dịch</h2>
+                            </header>
+                            <div class="card-body">
+                                <div>
+                                    <a id="btnSendMoneyModal" href="#sendMoneyModal" class="btn btn-primary btn-md font-weight-semibold btn-py-2 px-4"><i class="fas fa-paper-plane"></i> Gửi tiền</a>
+                                    <div id="sendMoneyModal" class="modal-block modal-block-md mfp-hide">
+                                        <section class="card">
+                                            <header class="card-header">
+                                                <h2 class="card-title">Gửi tiền</h2>
+                                            </header>
+                                            <div class="card-body">
+                                                <div class="row form-group">
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Gửi từ</label>
+                                                            <select class="form-control">
+                                                                <option>Tài khoản chính</option>
+                                                                <option>Tài khoản tiết kiệm</option>
+                                                                <option>Tài khoản tiền gửi</option>
+                                                                <option>Quỹ</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Số tiền</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">OTP</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Số tài khoản</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Chủ tài khoản</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Ngân Hàng</label>
+                                                            <select class="form-control">
+                                                                <option>Ngân hàng Á Châu (ACB)</option>
+                                                                <option>Việt Nam Thương Tín (VietBank)</option>
+                                                                <option>NH TMCP Quốc tế Việt Nam (VIB)</option>
+                                                                <option>Ngân hàng TMCP Sài Gòn (SCB)</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Chi nhánh</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-right">
+                                                        <button class="btn btn-primary modal-confirm">Tiếp tục</button>
+                                                        <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </section>
+                                    </div>
+
+                                    <a id="btnWithdrawModal" href="#withdrawModal" class="btn btn-primary btn-md font-weight-semibold btn-py-2 px-4"><i class="fas fa-arrow-down"></i> Rút tiền</a>
+                                    <div id="withdrawModal" class="modal-block modal-block-md mfp-hide">
+                                        <section class="card">
+                                            <header class="card-header">
+                                                <h2 class="card-title">Rút tiền về thẻ</h2>
+                                            </header>
+                                            <div class="card-body">
+                                                <div class="row form-group">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Rút từ</label>
+                                                            <select class="form-control">
+                                                                <option>Tài khoản chính</option>
+                                                                <option>Tài khoản tiết kiệm</option>
+                                                                <option>Tài khoản tiền gửi</option>
+                                                                <option>Quỹ</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Đến</label>
+                                                            <select class="form-control">
+                                                                <option>Thẻ Visa</option>
+                                                                <option>Thẻ Vietcombank</option>
+                                                                <option>Thẻ Techcombank</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-lg-8">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Số tiền</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">OTP</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-right">
+                                                        <button class="btn btn-primary modal-confirm">Xác nhận</button>
+                                                        <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </section>
+                                    </div>
+
+                                    <a id="btnAddMoneyModal" href="#withdrawModal" class="btn btn-primary btn-md font-weight-semibold btn-py-2 px-4"><i class="fas fa-plus"></i> Nạp tiền</a>
+                                    <div id="addMoneyModal" class="modal-block modal-block-md mfp-hide">
+                                        <section class="card">
+                                            <header class="card-header">
+                                                <h2 class="card-title">Nạp tiền vào tài khoản</h2>
+                                            </header>
+                                            <div class="card-body">
+                                                <div class="row form-group">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Nạp từ</label>
+                                                            <select class="form-control">
+                                                                <option>Thẻ Visa</option>
+                                                                <option>Thẻ Vietcombank</option>
+                                                                <option>Thẻ Techcombank</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Đến</label>
+                                                            <select class="form-control">
+                                                                <option>Tài khoản chính</option>
+                                                                <option>Tài khoản tiết kiệm</option>
+                                                                <option>Tài khoản tiền gửi</option>
+                                                                <option>Quỹ</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-lg-8">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Số tiền</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">OTP</label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-right">
+                                                        <button class="btn btn-primary modal-confirm">Xác nhận</button>
+                                                        <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <table class="table table-responsive-lg table-bordered table-striped table-sm mb-0 mt-3">
+                                    <thead>
+                                        <tr>
+                                            <th>Loại giao dịch</th>
+                                            <th>Đối tượng gửi/nhận</th>
+                                            <th>Mã giao dịch</th>
+                                            <th>Trạng thái</th>
+                                            <th class="text-right">Số tiền</th>
+                                            <th class="text-right">Số dư</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Trịnh Văn Quyết</td>
+                                            <td>#IO-BN-122</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">500.0000</td>
+                                            <td class="text-right">12.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Từ</td>
+                                            <td>Trần Tuấn Anh</td>
+                                            <td>#IO-BN-123</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">300.0000</td>
+                                            <td class="text-right">12.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Apple Inc.</td>
+                                            <td>#IO-BN-124</td>
+                                            <td>Đang gửi</td>
+                                            <td class="text-right">100.0000</td>
+                                            <td class="text-right">12.200.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Ebay LLC</td>
+                                            <td>#IO-BN-125</td>
+                                            <td>Thất bại</td>
+                                            <td class="text-right">1.000.0000</td>
+                                            <td class="text-right">12.200.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Từ</td>
+                                            <td>Nguyễn Văn Thanh</td>
+                                            <td>#IO-BN-126</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">500.0000</td>
+                                            <td class="text-right">12.700.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Đoàn Văn Hậu</td>
+                                            <td>#IO-BN-127</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">100.0000</td>
+                                            <td class="text-right">12.600.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Mặt trận tổ quốc</td>
+                                            <td>#IO-BN-128</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">5.000.0000</td>
+                                            <td class="text-right">7.600.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Donate Độ Mixi</td>
+                                            <td>#IO-BN-129</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">100.0000</td>
+                                            <td class="text-right">7.500.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Trịnh Văn Quyết</td>
+                                            <td>#IO-BN-130</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">500.0000</td>
+                                            <td class="text-right">12.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Từ</td>
+                                            <td>Trần Tuấn Anh</td>
+                                            <td>#IO-BN-131</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="text-right">300.0000</td>
+                                            <td class="text-right">12.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Apple Inc.</td>
+                                            <td>#IO-BN-132</td>
+                                            <td>Đang gửi</td>
+                                            <td class="text-right">100.0000</td>
+                                            <td class="text-right">12.200.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Đến</td>
+                                            <td>Ebay LLC</td>
+                                            <td>#IO-BN-133</td>
+                                            <td>Thất bại</td>
+                                            <td class="text-right">1.000.0000</td>
+                                            <td class="text-right">12.200.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside id="sidebar-right" class="sidebar-right">
+            <div class="nano">
+                <div class="nano-content">
+                    <a href="#" class="mobile-close d-md-none">
+                        Collapse <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                    <div class="sidebar-right-wrapper">
+
+                        <div class="sidebar-widget widget-calendar">
+                            <h6>Upcoming Tasks</h6>
+                            <div data-plugin-datepicker data-plugin-skin="dark"></div>
+
+                            <ul>
+                                <li>
+                                    <time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+                                    <span>Company Meeting</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget widget-friends">
+                            <h6>Friends</h6>
+                            <ul>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+    </section>
+
+
+
+    <!-- Vendor -->
+    <script src="../Assets/vendor/jquery/jquery.js"></script>
+    <script src="../Assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="../Assets/vendor/popper/umd/popper.min.js"></script>
+    <script src="../Assets/vendor/bootstrap/js/bootstrap.js"></script>
+
+    <script src="../Assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnWithdrawModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#withdrawModal',
+                    }
+                });
+            });
+
+            $('#btnSendMoneyModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#sendMoneyModal',
+                    }
+                });
+            });
+
+            $('#btnAddMoneyModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#addMoneyModal',
+                    }
+                });
+            });
+
+
+
+            /*
+            Modal Dismiss
+            */
+            $(document).on('click', '.modal-dismiss', function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        });
+    </script>
+    <script src="../Assets/js/theme.js"></script>
+</body>
+</html>

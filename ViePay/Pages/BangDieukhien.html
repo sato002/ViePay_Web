@@ -1,0 +1,728 @@
+﻿<!doctype html>
+<html class="fixed sidebar-light header-dark csstransforms header-dark csstransforms">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Responsive Tables | Porto Admin - Responsive HTML5 Template</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../Assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../Assets/vendor/boxicons/css/boxicons.min.css" />
+
+    <link rel="stylesheet" href="../Assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="../Assets/vendor/morris/morris.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../Assets/css/theme.css" />
+</head>
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    ViePay
+                </a>
+                <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <form action="pages-search-results.html" class="search nav-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Tìm kiếm...">
+                        <span class="input-group-append">
+                            <button class="btn btn-default" type="submit"><i class="bx bx-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+
+                <span class="separator"></span>
+
+                <ul class="notifications">
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-bell"></i>
+                            <span class="badge">4</span>
+                        </a>
+
+                        <div class="dropdown-menu notification-menu">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default">4</span>
+                                Thông báo
+                            </div>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-thumbs-down bg-danger text-light"></i>
+                                            </div>
+                                            <span class="title">Trịnh Văn Quyết gửi đến 500.000!</span>
+                                            <span class="message">Vừa xong</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-lock bg-warning text-light"></i>
+                                            </div>
+                                            <span class="title">Trần Tuấn Anh gửi đi 300.000</span>
+                                            <span class="message">15 phút trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Apple Inc. 100.000</span>
+                                            <span class="message">2 giờ trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Ebay LLC 1.000.000</span>
+                                            <span class="message">01/01/2021</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="text-right">
+                                    <a href="DanhSachThongBao.html" class="view-more">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+                            <span class="name">Nguyễn Văn A</span>
+                        </div>
+
+                        <i class="fa custom-caret"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled mb-2">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user-circle"></i> Thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="bx bx-power-off"></i> Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+
+                    </div>
+                    <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            <ul class="nav nav-main">
+                                <li>
+                                    <a class="nav-link" href="BangDieuKhien.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Bảng điều khiển</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachGiaoDich.html">
+                                        <i class="bx bx-cart-alt" aria-hidden="true"></i>
+                                        <span>Giao dịch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachThe.html">
+                                        <i class="bx bx-detail" aria-hidden="true"></i>
+                                        <span>Thẻ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachQuy.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Quỹ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachTinTuc.html">
+                                        <i class="bx bx-file" aria-hidden="true"></i>
+                                        <span>Tin tức</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="ThietLap.html">
+                                        <i class="bx bx-loader-circle" aria-hidden="true"></i>
+                                        <span>Thiết lập</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>Bảng điều khiển</h2>
+
+                    <div class="right-wrapper text-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="BangDieuKhien.html">
+                                    <i class="bx bx-home-alt"></i>
+                                </a>
+                            </li>
+                            <li><span>Bảng điều khiển</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                </header>
+                <!-- start: page -->
+                <div class="row">
+                    <div class="col-lg-12 col-xl-4">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card card-modern">
+                                    <div class="card-body p-0">
+                                        <div class="widget-user-info">
+                                            <div class="widget-user-info-header">
+                                                <h2 class="font-weight-bold text-color-dark text-5">Xin chào, Nguyễn Văn A</h2>
+                                                <p class="mb-0">Thành viên vàng</p>
+
+                                                <div class="widget-user-acrostic bg-primary">
+                                                    <span class="font-weight-bold">JD</span>
+                                                </div>
+                                            </div>
+                                            <div class="widget-user-info-body">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <strong class="text-color-dark text-5">12.500.000</strong>
+                                                        <h3 class="text-4-1">Số dư</h3>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <strong class="text-color-dark text-5">637</strong>
+                                                        <h3 class="text-4-1">Giao dịch</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <a href="ThietLap.html" id="btnSendMoneyModal" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-4 w-100">Chuyển tiền</a>
+                                                        <div id="sendMoneyModal" class="modal-block modal-block-md mfp-hide">
+                                                            <section class="card">
+                                                                <header class="card-header">
+                                                                    <h2 class="card-title">Gửi tiền</h2>
+                                                                </header>
+                                                                <div class="card-body">
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Gửi từ</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Tài khoản chính</option>
+                                                                                    <option>Tài khoản tiết kiệm</option>
+                                                                                    <option>Tài khoản tiền gửi</option>
+                                                                                    <option>Quỹ</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-8">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Số tiền</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">OTP</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Số tài khoản</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Chủ tài khoản</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Ngân Hàng</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Ngân hàng Á Châu (ACB)</option>
+                                                                                    <option>Việt Nam Thương Tín (VietBank)</option>
+                                                                                    <option>NH TMCP Quốc tế Việt Nam (VIB)</option>
+                                                                                    <option>Ngân hàng TMCP Sài Gòn (SCB)</option>
+                                                                                    <option>...</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Chi nhánh</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 text-right">
+                                                                            <button class="btn btn-primary modal-confirm">Tiếp tục</button>
+                                                                            <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="ThietLap.html" id="btnWithdrawModal" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-4 w-100">Rút tiền</a>
+                                                        <div id="withdrawModal" class="modal-block modal-block-md mfp-hide">
+                                                            <section class="card">
+                                                                <header class="card-header">
+                                                                    <h2 class="card-title">Rút tiền về thẻ</h2>
+                                                                </header>
+                                                                <div class="card-body">
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Rút từ</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Tài khoản chính</option>
+                                                                                    <option>Tài khoản tiết kiệm</option>
+                                                                                    <option>Tài khoản tiền gửi</option>
+                                                                                    <option>Quỹ</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Đến</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Thẻ Visa</option>
+                                                                                    <option>Thẻ Vietcombank</option>
+                                                                                    <option>Thẻ Techcombank</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-8">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Số tiền</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">OTP</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 text-right">
+                                                                            <button class="btn btn-primary modal-confirm">Xác nhận</button>
+                                                                            <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="ThietLap.html" id="btnAddMoneyModal" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-4 w-100">Nạp tiền</a>
+                                                        <div id="addMoneyModal" class="modal-block modal-block-md mfp-hide">
+                                                            <section class="card">
+                                                                <header class="card-header">
+                                                                    <h2 class="card-title">Nạp tiền vào tài khoản</h2>
+                                                                </header>
+                                                                <div class="card-body">
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Nạp từ</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Thẻ Visa</option>
+                                                                                    <option>Thẻ Vietcombank</option>
+                                                                                    <option>Thẻ Techcombank</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Đến</label>
+                                                                                <select class="form-control">
+                                                                                    <option>Tài khoản chính</option>
+                                                                                    <option>Tài khoản tiết kiệm</option>
+                                                                                    <option>Tài khoản tiền gửi</option>
+                                                                                    <option>Quỹ</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row form-group">
+                                                                        <div class="col-lg-8">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">Số tiền</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="form-group">
+                                                                                <label class="col-form-label">OTP</label>
+                                                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 text-right">
+                                                                            <button class="btn btn-primary modal-confirm">Xác nhận</button>
+                                                                            <button class="btn btn-default modal-dismiss">Hủy</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-modern">
+                                    <div class="card-header">
+                                        <div class="card-actions">
+                                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                        </div>
+                                        <h2 class="card-title">Giao dịch gần đây</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list list-unstyled mb-0">
+                                            <li class="activity-item">
+                                                <span class="activity-time">1 phút trước</span> <i class="fas fa-chevron-right text-color-primary"></i>
+                                                <span class="activity-description">
+                                                    <a href="#" class="text-color-dark"><strong>Trịnh Văn Quyết gửi đến</strong></a>  500.000
+                                                </span>
+                                            </li>
+                                            <li class="activity-item">
+                                                <span class="activity-time">2 giờ trước</span> <i class="fas fa-chevron-right text-color-primary"></i>
+                                                <span class="activity-description">
+                                                    <a href="#" class="text-color-dark"><strong>Trần Tuấn Anh gửi đi</strong></a> 300.000
+                                                </span>
+                                            </li>
+                                            <li class="activity-item">
+                                                <span class="activity-time">3 ngày trước</span> <i class="fas fa-chevron-right text-color-primary"></i>
+                                                <span class="activity-description">
+                                                    <a href="#" class="text-color-dark"><strong>Thanh toán cho Apple Inc.</strong></a> 100.000
+                                                </span>
+                                            </li>
+                                            <li class="activity-item">
+                                                <span class="activity-time">4 tuần trước</span> <i class="fas fa-chevron-right text-color-primary"></i>
+                                                <span class="activity-description">
+                                                    <a href="#" class="text-color-dark"><strong>Thanh toán cho Ebay LLC</strong></a> 1.000.000
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mt-3">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-8 pt-2 pt-xl-0 mt-4 mt-xl-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card card-modern">
+                                    <div class="card-header">
+                                        <div class="card-actions">
+                                            <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                        </div>
+                                        <h2 class="card-title">Biến động số dư</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <strong class="text-color-dark text-6">7.325.000</strong>
+                                                <h3 class="text-4 mt-0 mb-2">Tháng trước</h3>
+                                            </div>
+                                            <div class="col-auto">
+                                                <strong class="text-color-dark text-6">17.325.000</strong>
+                                                <h3 class="text-4 mt-0 mb-2">Tháng này</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <!-- Morris: Area -->
+                                                <div class="chart chart-md chart-bar-stacked-sm my-3" id="revenueChart" style="height: 432px;"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4 pt-2 pt-lg-0 mt-4 mt-lg-0">
+                        <div class="card card-modern">
+                            <div class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                </div>
+                                <h2 class="card-title">Thẻ của bạn</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-ecommerce-simple table-striped mb-1">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên</th>
+                                                <th>Số dư</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#" class="font-weight-semibold">Thẻ VISA</a></td>
+                                                <td width="90">12.500.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" class="font-weight-semibold">Thẻ Vietcombank</a></td>
+                                                <td width="90">3.500.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" class="font-weight-semibold">Thẻ Techcombank</a></td>
+                                                <td width="90">571.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a href="#" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mb-4 mt-4">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-8 pt-2 pt-xl-0 mt-4 mt-xl-0">
+                        <div class="card card-modern">
+                            <div class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
+                                </div>
+                                <h2 class="card-title">Danh sách quỹ</h2>
+                            </div>
+                            <div class="card-body" style="display: block;">
+                                <label>Mua game PS4 (1.000.000/1.750.000)</label>
+                                <div class="progress progress-xs mb-4 light rounded-0">
+                                    <div class="progress-bar progress-bar-primary rounded-0" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="sr-only">50%</span>
+                                    </div>
+                                </div>
+                                <label>Mua nhà mới (750.000.000/2.500.000.000)</label>
+                                <div class="progress progress-xs mb-4 light rounded-0">
+                                    <div class="progress-bar progress-bar-info rounded-0" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+                                        <span class="sr-only">35%</span>
+                                    </div>
+                                </div>
+                                <label>Mua ô tô (150.000.000/800.000.000)</label>
+                                <div class="progress progress-xs mb-4 light rounded-0">
+                                    <div class="progress-bar progress-bar-primary rounded-0" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                                        <span class="sr-only">25%</span>
+                                    </div>
+                                </div>
+                                <label>Học tiếng anh (2.759.000/8.900.000)</label>
+                                <div class="progress progress-xs mb-4 light rounded-0">
+                                    <div class="progress-bar progress-bar-info rounded-0" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%;">
+                                        <span class="sr-only">22%</span>
+                                    </div>
+                                </div>
+                                <label>Đầu tư chứng khoán (9.500.000/17.350.000)</label>
+                                <div class="progress progress-xs mb-5 light rounded-0">
+                                    <div class="progress-bar progress-bar-primary rounded-0" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+                                        <span class="sr-only">19%</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-light btn-xl border font-weight-semibold text-color-dark text-3 mb-4">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+
+    <!-- Vendor -->
+    <script src="../Assets/vendor/jquery/jquery.js"></script>
+    <script src="../Assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="../Assets/vendor/popper/umd/popper.min.js"></script>
+    <script src="../Assets/vendor/bootstrap/js/bootstrap.js"></script>
+
+    <script src="../Assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="../Assets/vendor/raphael/raphael.js"></script>
+    <script src="../Assets/vendor/morris/morris.js"></script>
+    <script>
+        (function ($) {
+
+            'use strict';
+
+            /*
+            * Revenue Chart
+            */
+            if ($('#revenueChart').get(0)) {
+                var revenueChartData = [{
+                    y: 'Tháng 1',
+                    a: 17500000
+                }, {
+                    y: 'Tháng 2',
+                    a: 7700000
+                }, {
+                    y: 'Tháng 3',
+                    a: 3250000
+                }, {
+                    y: 'Tháng 4',
+                    a: 7900000
+                }, {
+                    y: 'Tháng 5',
+                    a: 2500000
+                }, {
+                    y: 'Tháng 6',
+                    a: 4600000
+                }, {
+                    y: 'Tháng 7',
+                    a: 10100000
+                }, {
+                    y: 'Tháng 8',
+                    a: 8125000
+                }, {
+                    y: 'Tháng 9',
+                    a: 9680000
+                }, {
+                    y: 'Tháng 10',
+                    a: 12500000
+                }, {
+                    y: 'Tháng 11',
+                    a: 11500000
+                }, {
+                    y: 'Tháng 12',
+                    a: 7500000
+                }];
+
+                Morris.Bar({
+                    resize: true,
+                    element: 'revenueChart',
+                    data: revenueChartData,
+                    xkey: 'y',
+                    ykeys: ['a'],
+                    labels: ['Số dư'],
+                    barColors: ['#0088cc'],
+                    fillOpacity: 0.7,
+                    smooth: false,
+                    stacked: true,
+                    hideHover: true,
+                    grid: false
+                });
+            }
+
+            $('#btnWithdrawModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#withdrawModal',
+                    }
+                });
+            });
+
+            $('#btnSendMoneyModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#sendMoneyModal',
+                    }
+                });
+            });
+
+            $('#btnAddMoneyModal').off('click').on('click', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    modal: true,
+                    items: {
+                        src: '#addMoneyModal',
+                    }
+                });
+            });
+
+            /*
+            Modal Dismiss
+            */
+            $(document).on('click', '.modal-dismiss', function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        }).apply(this, [jQuery]);
+    </script>
+    <script src="../Assets/js/theme.js"></script>
+</body>
+</html>

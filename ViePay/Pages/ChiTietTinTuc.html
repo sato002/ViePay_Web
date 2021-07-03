@@ -1,0 +1,386 @@
+﻿<!doctype html>
+<html class="fixed sidebar-light header-dark csstransforms">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Responsive Tables | Porto Admin - Responsive HTML5 Template</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../Assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../Assets/vendor/boxicons/css/boxicons.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../Assets/css/theme.css" />
+    <style>
+        .text-color-dark {
+            color: #33353F;
+        }
+    </style>
+</head>
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    ViePay
+                </a>
+                <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <form action="pages-search-results.html" class="search nav-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Tìm kiếm...">
+                        <span class="input-group-append">
+                            <button class="btn btn-default" type="submit"><i class="bx bx-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+
+                <span class="separator"></span>
+
+                <ul class="notifications">
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-bell"></i>
+                            <span class="badge">4</span>
+                        </a>
+
+                        <div class="dropdown-menu notification-menu">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default">4</span>
+                                Thông báo
+                            </div>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-thumbs-down bg-danger text-light"></i>
+                                            </div>
+                                            <span class="title">Trịnh Văn Quyết gửi đến 500.000!</span>
+                                            <span class="message">Vừa xong</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-lock bg-warning text-light"></i>
+                                            </div>
+                                            <span class="title">Trần Tuấn Anh gửi đi 300.000</span>
+                                            <span class="message">15 phút trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Apple Inc. 100.000</span>
+                                            <span class="message">2 giờ trước</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="fas fa-signal bg-success text-light"></i>
+                                            </div>
+                                            <span class="title">Thanh toán cho Ebay LLC 1.000.000</span>
+                                            <span class="message">01/01/2021</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="text-right">
+                                    <a href="DanhSachThongBao.html" class="view-more">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+                            <span class="name">Nguyễn Văn A</span>
+                        </div>
+
+                        <i class="fa custom-caret"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled mb-2">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="bx bx-user-circle"></i> Thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="bx bx-power-off"></i> Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+
+                    </div>
+                    <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            <ul class="nav nav-main">
+                                <li>
+                                    <a class="nav-link" href="BangDieuKhien.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Bảng điều khiển</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachGiaoDich.html">
+                                        <i class="bx bx-cart-alt" aria-hidden="true"></i>
+                                        <span>Giao dịch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachThe.html">
+                                        <i class="bx bx-detail" aria-hidden="true"></i>
+                                        <span>Thẻ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachQuy.html">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Quỹ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="DanhSachTinTuc.html">
+                                        <i class="bx bx-file" aria-hidden="true"></i>
+                                        <span>Tin tức</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="ThietLap.html">
+                                        <i class="bx bx-loader-circle" aria-hidden="true"></i>
+                                        <span>Thiết lập</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>Tin tức</h2>
+
+                    <div class="right-wrapper text-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="BangDieuKhien.html">
+                                    <i class="bx bx-home-alt"></i>
+                                </a>
+                            </li>
+                            <li><span>Tin tức</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                </header>
+                <!-- start: page -->
+                <div class="row">
+                    <article class="detail-wrap">
+                        <header class="detail__header">
+                            <div class="detail__meta">18:17 11/06/2021</div>
+                            <h1 class="detail__title">Giới trẻ Trung Quốc ôm mộng đổi đời nhờ "lướt sóng" tiền ảo</h1>
+                            <div class="detail__tools">
+                                <div class="detail__author"> <strong>Hoài Thu</strong></div>
+                            </div>
+                            <h2 class="detail__summary">Bất chấp rủi ro, đầu tư tiền ảo đang trở thành "cơ hội duy nhất" để bước vào tầng lớp trung lưu của nhiều người trẻ tại Trung Quốc...</h2>
+                            <figure class="detail__avatar">
+                                <img src="https://media.vneconomy.vn/w800/images/upload/2021/06/11/china2.jpeg" alt="Ngày càng nhiều người trẻ Trung Quốc ôm mộng đổi đời với tiền ảo - Ảnh: Reuters." class="img-fluid">
+                                <figcaption>Ngày càng nhiều người trẻ Trung Quốc ôm mộng đổi đời với tiền ảo - Ảnh: Reuters.</figcaption>
+                            </figure>
+                        </header>
+                        <div class="detail__content">
+                            <p>
+                                <a title="" href="https://vneconomy.vn/nguoi-dung-mang-trung-quoc-bi-chan-tim-kiem-ve-cac-san-tien-ao.htm" target="_blank" rel="noopener">“Cơn sốt” tiền ảo</a> đang nhanh chóng lan nhanh trong giới trẻ tại <a title="" href="https://vneconomy.vn/trung-quoc-bat-hon-1-100-nguoi-trong-chien-dich-chong-dung-tien-ao-de-rua-tien.htm" target="_blank" rel="noopener">Trung Quốc</a>, qua lời khuyên của bạn bè hay bị tác động bởi những người ảnh hưởng trên mạng xã hội. “Cơn sốt” này không ngừng nóng lên bất chấp các loại tiền ảo lớn trên thị trường đã
+                                trải qua những lần biến động chóng mặt.
+                            </p>
+                            <p>
+                                Wendy Li, 32 tuổi, một người sản xuất nội dung trực tuyến ở Thâm Quyến, v
+                                à bạn trai Henry Yi, một nhiếp ảnh gia 29 tuổi, cho biết vài tháng qua, hai người cùng bạn bè của mình đã “lướt sóng” đầu cơ
+                                tiền ảo.
+                            </p>
+                            <p>
+                                “Nhiều bạn bè, đồng nghiệp, bạn cùng phòng của chúng tôi đã đầu tư vào tiền ảo. Sức hút của tiền ảo lớn
+                                đến mức ngay khi một người bạn bắt đầu đầu tư, những người khác sẽ&nbsp; nhanh chóng bị cá
+                                m dỗ”, Wendy Li cho biết.&nbsp;
+                            </p>
+                            <h3 class="aligncenter">
+                                <strong>"CƠ HỘI TỐT CUỐI CÙNG" ĐỂ ĐỔI ĐỜI</strong>
+                            </h3>
+                            <p>Theo tờ South China Morning Post, cũng giống như giới trẻ Mỹ, Hàn Quốc, Nhật Bản, nhiều người trẻ Trung Quốc, ở độ tuổi ngoài 20-30, xem đầu cơ tiền ảo là “cơ hội tốt cuối cùng” để phá bỏ rào cản giai cấp và vươn mình bước lên tầng lớp trung lưu.&nbsp;</p>
+                            <p>Đặc biệt, người trẻ tại Thâm Quyến - kinh đô công nghệ với hàng triệu người làm việc trong lĩnh vực công nghệ, tài chính và internet, dành sự quan tâm lớn tới toàn cầu hóa và các tài sản ảo mới nổi. Giá trị thị trường tiền ảo tăng vọt cùng sức ảnh hưởng của các nhân vật có tiếng nói trên internet trở thành động lực thôi thúc họ thực hiện giấc mơ của mình.&nbsp;</p>
+                            <div id="box1623406555374" class="serviceBox05 imf-boxes fr">
+                                <div class="service-content">
+                                    <h5><strong>Những người trẻ Trung Quốc đã quen với việc sử dụng điện thoại di động để mua cổ phiếu, sản phẩm chứng khoán khác hay đăng ký khoản vay trực tuyến. Do đó, họ dễ dàng đầu tư vào tiền ảo...</strong></h5>
+                                </div>
+                            </div>
+                            <p>Hiện không có nhiều thông tin về cả quy mô đầu tư tiền ảo cũng như đặc điểm của các nhà đầu tư tiền ảo tại Trung Quốc.&nbsp;Tuy nhiên, theo một khảo sát với 29.000 người của trang mạng xã hội Weibo đầu tháng này, 44,8% cho biết họ đã đầu tư tiền ảo.&nbsp;</p>
+                            <p>Chỉ riêng trên Weibo, tìm kiếm với từ khóa “Bitcoin” cho hàng nghìn kết quả là các bài đăng với hơn 11,7 tỷ lượt xem. Đó là chưa kể nhiều bài đăng trên các mạng xã hội khác của Trung Quốc.&nbsp;</p>
+                            <p>Dù vài tuần qua, nhà chức trách Trung Quốc đã đưa ra hàng loạt biện pháp để hạn chế đầu tư vào tiền ảo, nhiều người trẻ vẫn không ngừng bày tỏ sự nhiệt huyết với việc khoe bảng giao dịch tiền ảo hàng ngày hay khoe lãi tới 75 lần trên mạng xã hội.&nbsp;</p>
+                            <p>“Những người trẻ Trung Quốc đã quen với việc sử dụng điện thoại di động để mua cổ phiếu, sản phẩm chứng khoán khác hay đăng ký khoản vay trực tuyến. Do đó, họ dễ dàng đầu tư vào tiền ảo”, Simon Zhao, Phó trưởng khoa Khoa học Xã hội và Nhân văn của trường Đại học quốc tế BNU-HKBU, nhận xét.&nbsp;</p>
+                            <figure class="image-wrap align-center-image">
+                                <img src="https://media.vneconomy.vn/w900/images/upload/2021/06/11/99bdd8b6-ebc6-11e7-8d3e-3515408466a8-1280x720-192954.jpeg" alt="Nh&amp;agrave; đầu tư trẻ Trung Quốc &amp;iacute;t quan t&amp;acirc;m tới đầu tư d&amp;agrave;i hạn hơn so với những người ở độ tuổi 40-50 - Ảnh: Bloomberg" data-original="https://media.vneconomy.vn/images/upload/2021/06/11/99bdd8b6-ebc6-11e7-8d3e-3515408466a8-1280x720-192954.jpeg">
+                                <figcaption class="image-caption">Nhà đầu tư trẻ Trung Quốc ít quan tâm tới đầu tư dài hạn hơn so với những người ở độ tuổi 40-50 - Ảnh: Bloomberg</figcaption>
+                            </figure>
+                            <p>Một báo cáo của hãng tư vấn dữ liệu lớn MobTech cho thấy hơn 80 triệu nhà đầu tư Trung Quốc sử dụng ứng dụng di động để đầu tư tài chính trong năm ngoái. Cũng theo báo cáo này, số lượng nhà đầu tư mới qua ứng dụng di động đã vượt hơn 20 triệu người, trong đó 52,9% dưới 30 tuổi.&nbsp;</p>
+                            <p>Theo ông Zhao, người trẻ Trung Quốc hứng thú với việc đầu cơ hơn so với nhưng người trong độ tuổi 40-50, và họ cũng ít quan tâm tới đầu tư dài hạn.&nbsp;</p>
+                            <p>Li và Yi ở Thâm Quyến là hai trong số những người theo xu hướng này. Li cho biết thu nhập hàng tháng của cô là khoảng 10.000 Nhân dân tệ và hiện sống trong một căn hộ 3 phòng ngủ cùng 3 người khác. Tất cả đều đang đầu cơ tiền ảo.&nbsp;</p>
+                            <div>
+                            </div>
+                            <p>“Hồi tháng 4, tôi gặp một cô gái trạc tuổi tôi ở Thâm Quyến. Cô ấy làm việc cho một công ty khởi nghiệp về công nghệ tài chính và đã kiếm được hàng triệu USD nhờ đầu cơ tiền ảo từ năm ngoái. Tôi đặc biệt bị ấn tượng bởi khái niệm phi tập trung [đặc điểm cơ bản của nhiều loại tiền ảo] mà cô ấy đã đề cập. Nghĩa là, những người trẻ tuổi chúng tôi có thể phá vỡ ràng buộc và quyền lực kinh tế hiện tại trong việc xác định sự giàu có và rằng việc tiền tệ không nên chỉ nằm trong tay một số ít người, như Phố Wall và chính phủ”, Li chia sẻ.&nbsp;</p>
+                            <div id="box1623406639934" class="serviceBox05 imf-boxes fl">
+                                <div class="service-content">
+                                    <h5><strong>Tiền ảo là cơ hội duy nhất để những người trẻ thuộc tầng lớp lao động như chúng tôi giàu lên nhanh chóng dù rủi ro cao. Nếu không nắm bắt cơ hội này, chúng tôi sẽ không bao giờ đủ tiền mua nhà...</strong></h5>
+                                </div>
+                            </div>
+                            <p>Ngay trong tháng đó, Li và bạn trai Yi đã đầu tư 80.000 Nhân dân tệ (12.800 USD) qua ZB.com. Đây là một trong số ít sàn giao dịch tiền ảo tại Trung Quốc có thể truy cập mà không cần sử dụng mạng riêng ảo (VPN).</p>
+                            <p>Họ đã mua tiền ảo Tether với giá khoảng 6,47 và 6,81 Nhân dân tệ qua ứng dụng, sau đó mua thêm Uni, Dot, Ethereum và Litecoin. Sau vài tuần, khoản đầu tư của họ tăng lên 100.000 Nhân dân tệ. Khi thị trường lao dốc vào đầu tháng 5, họ đầu tư thêm 30.000 Nhân dân tệ.</p>
+                            <h3 class="aligncenter"><strong>ĐÁNH BẠC QUA ĐÊM KHI "LƯỚT SÓNG" TIỀN ẢO?</strong></h3>
+                            <p>Tuy nhiên, hiện giá trị khoản đầu tư của Li và Yi đã giảm một nửa. Điều này khiến thái độ của đối với tiền ảo bắt đầu có chia rẽ.</p>
+                            <p>Li cho biết cô cảm thấy rủi ro ngày càng lớn bởi ngày càng nhiều chính phủ thực hiện các biện pháp siết chặt quản lý giao dịch tiền ảo và hoạt động khai thác tiền ảo. Trong khi đó, Yi muốn đầu tư thêm khi giá xuống và tin rằng thị trường sẽ tăng trở lại như những lần trước đây.</p>
+                            <div id="box1623406666836" class="serviceBox05 imf-boxes fr">
+                                <div class="service-content">
+                                    <h5>Hầu hết người trẻ Trung Quốc không chú ý nhiều đến mối tương quan giữa tiền ảo, giá vàng, đồng USD, hay dự báo lạm phát toàn cầu… Dù không mấy người quan tâm tới những dự báo công nghệ hay chủ nghĩa tương lai, nhưng họ lại phát điên khi giá Bitcoin và Dogecoin tăng vọt thời gian gần đây...</h5>
+                                </div>
+                            </div>
+                            <p>“Tiền ảo là cơ hội duy nhất để những người trẻ thuộc tầng lớp lao động như chúng tôi giàu lên nhanh chóng dù rủi ro cao. Nếu không nắm bắt cơ hội này, chúng tôi sẽ không bao giờ đủ tiền mua nhà ở Thâm Quyến”, Yi nói và cho biết đây là lý do phổ biến khiến nhiều người trẻ ở Thâm Quyền vay tiền để “lướt sóng” tiền ảo.&nbsp;</p>
+                            <p>Tuy nhiên, theo ông Guo Zhongxiao, một nhà bình luận kinh tế số tại Thâm Quyền, nhiều nhà đầu tư trẻ Trung Quốc không hiểu về các chỉ số kỹ thuật cũng như logic vận hành của thị trường tiền ảo. Phản ứng của họ trên với biến động thị trường cũng chậm trễ do sự hạn chế trong tiếp cận thông tin và đầu tư ở nước ngoài.&nbsp;</p>
+                            <p>“Hầu hết người trẻ Trung Quốc không chú ý nhiều đến mối tương quan giữa tiền ảo, giá vàng, đồng USD, hay dự báo lạm phát toàn cầu… Dù không mấy người quan tâm tới những dự báo công nghệ hay chủ nghĩa tương lai, nhưng họ lại phát điên khi giá Bitcoin và Dogecoin tăng vọt thời gian gần đây. Họ sẽ không giữ chúng làm khoản đầu tư dài hạn”, ông Guo Zhongxiao nhận xét.&nbsp;</p>
+                            <p>Theo ông Frank Cui, nhà khoa học trưởng của hãng tư vấn chuỗi khối và dữ liệu lớn dataqin.com, đầu cơ vào tiền ảo tại Trung Quốc rủi ro hơn nhiều bởi giao dịch tiền ảo là bất hợp pháp và các nhà đầu tư cá nhân không có đủ thông tin để hiểu rõ thị trường và đánh giá các rủi ro.&nbsp;</p>
+                            <p>“Các phương tiện truyền thông chính thống sẽ chỉ đưa tin về những biện pháp siết chặt quản lý và hạn chế với các giao dịch trên thị trường. Ở Trung Quốc, đầu cơ tiền ảo giống như đánh bạc qua đêm, chẳng có giới hạn nào cho các biến động giá và cũng không được pháp luật bảo vệ”, ông Cui cho biết.&nbsp;</p>
+                            <p>Cả Cui và Zhao đều dự báo tiền pháp định và tiền ảo sẽ đối đầu trong dài hạn, đi liền với đó là những cú sốc trên thị trường khi ngày càng nhiều người trẻ Trung Quốc và các nhà đầu cơ thuộc thế hệ Z cố gắng giành một phần của “miếng bánh”, bất chấp sự kiểm soát của chính phủ.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <aside id="sidebar-right" class="sidebar-right">
+            <div class="nano">
+                <div class="nano-content">
+                    <a href="#" class="mobile-close d-md-none">
+                        Collapse <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                    <div class="sidebar-right-wrapper">
+
+                        <div class="sidebar-widget widget-calendar">
+                            <h6>Upcoming Tasks</h6>
+                            <div data-plugin-datepicker data-plugin-skin="dark"></div>
+
+                            <ul>
+                                <li>
+                                    <time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+                                    <span>Company Meeting</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget widget-friends">
+                            <h6>Friends</h6>
+                            <ul>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="../Assets/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Vendor -->
+    <script src="../Assets/vendor/jquery/jquery.js"></script>
+    <script src="../Assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="../Assets/vendor/popper/umd/popper.min.js"></script>
+    <script src="../Assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="../Assets/js/theme.js"></script>
+</body>
+</html>
